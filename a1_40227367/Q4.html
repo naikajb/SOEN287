@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Lover's Survey</title>
+        <link rel = "stylesheet" href = "Survey.css">
+        <style>
+            body{
+    background-color: rgba(255, 255, 0, 0.563);
+}
+.info{
+    background-color: rgba(108, 75, 230, 0.585);
+    border-color:rgba(96, 40, 225, 0.585);
+    border-width: 5px;
+}
+
+.questions{
+    background-color: rgba(244, 23, 137, 0.459);
+    border-color: red;
+    border-width: 5px;
+}
+
+.legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+legend.questions{
+    background-color: rgba(240, 248, 255, 0);
+    font-weight: bold
+}
+
+legend.info{
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(48, 32, 121);
+}
+        </style>
+    </head>
+
+    <body>
+        <table> 
+            <tr>
+                <th>Music Lover's Survey</th>
+            </tr>
+        </table>
+
+        <form>
+            <p>
+            <fieldset class = "info"> 
+                <legend class = "info">Music Lover's Information</legend>
+                <label> First Name </label>
+                <input type ="text"></p>
+                <p>Last Name <input type ="text"></p>
+                <p>Gender <input type ="radio"> Female <input type = "radio"> Male</p>
+                <p> What age category are you from? <input type></p>
+                <p>Email <input type = "email"></p>
+            </fieldset>
+            </p>
+
+            <p>
+                <fieldset class = "questions">
+                    <legend class = "questions">Survey Questions</legend>
+                    <p>Which type of music do you listen to? (Pick as many as apply)</p>
+                    <p>
+                        <input type = "checkbox" > Blues 
+                        <input type = "checkbox"> Classical music 
+                        <input type = "checkbox"> Electronic Music 
+                    </p> 
+
+                    <p>
+                        <input type = "checkbox"> Hip Hop/Rap
+                        <input type = "checkbox"> Pop (Popular music)
+                        <input type = "checkbox"> Reggae
+                    </p> 
+                    
+                    <p>
+                        <input type = "checkbox"> other
+                    </p> 
+
+                    <p>List your 3 favorite artist/bands: </br>
+
+                        <input type = "textfield"> 
+                        <input type = "textfield"> 
+                        <input type = "textfield"> </br>
+                    </p> 
+
+                    <p>
+                        If you were to win tickets, which show would you like 2 tickets to?</br>
+                        <p>
+                            <input type = "radio" value = "damso"> Damso (January 29, 2023)
+                            <input type = "radio" value = "Niska"> Niska (January 23, 2023)
+                            <input type = "radio" value = "Artic Monkeys"> Arctic Monkeys (September 2, 2023)
+                        </p> 
+                    </p>
+
+                </fieldset>
+            </br>
+            </p>
+            <p>
+                Thank you for taking the time to fill out our survey!</br>
+            </p></br>
+
+            <p>
+                <input type = "submit" name = "submit">
+                <input type = "reset" name = "reset">
+            </p>
+        </form>
+    </body>
+</html>
