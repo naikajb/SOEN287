@@ -1,5 +1,15 @@
 header{
     font-weight: bolder;
     font-size: 40px;
+    color: rgb(0, 0, 0);
     
+
+}
+
+.logo{
+    width: 120px;
+}
+
+body{
+    background-color: rgba(132, 199, 125, 0.925);
 }
