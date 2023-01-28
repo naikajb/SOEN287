@@ -1,0 +1,17 @@
+
+#first{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#second{
+    position: relative;
+    
+}
+
+.red{
+    color: red;
+    font-weight: bold;
+
+}
