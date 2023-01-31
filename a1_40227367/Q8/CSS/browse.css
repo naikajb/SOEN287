@@ -1,22 +1,27 @@
 header{
     font-weight: bolder;
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgba(249, 224, 255, 0.888);
     text-align: center;
-   
+    background-color: rgba(56, 86, 44, 0.6);
+
+    margin:0;
+    top:0;
+    width: 100%;
+
 }
 
 .logo{
     width: 150px;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
     
 }
-
 body{
-    background-color: rgba(132, 199, 125, 0.925);
-    margin-left: 25%
+    margin-left: 25%;
+    margin-top:0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: rgb(226, 226, 226);
 }
 
 nav{
@@ -29,7 +34,7 @@ nav{
     width: 25%;
     height: 100%;
     display:grid;
-    background-color: rgba(128, 128, 128, 0.785);
+    background-color: rgba(56, 86, 44, 0.627);
 
 }
 
@@ -43,8 +48,36 @@ nav{
     text-align:center; 
     text-decoration: none;
     text-align: center;
-
-    padding-top:25% ;
+    padding: 30px;
+    
     
 
+}
+
+.pet-browsing{
+    color:rgb(247, 246, 246);
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+
+
+    justify-content: center;
+
+    border: 1px solid grey;
+    border-radius: 35px;
+    padding: 50px 45px; 
+    text-align:center;
+    margin: 25px;
+    height: 400px;
+
+    background-color: rgba(86, 44, 68, 0.627);
+    
+}
+
+footer{
+    color: rgba(0, 0, 0, 0.68);
+    padding: 5px;
+    background-color: rgb(176, 176, 177);
+    
+    
 }
