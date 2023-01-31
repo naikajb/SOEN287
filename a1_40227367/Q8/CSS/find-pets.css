@@ -24,6 +24,7 @@ body{
     background-color: rgb(226, 226, 226);
 }
 
+
 nav{
     text-align: center;
     position: fixed;
@@ -50,10 +51,9 @@ nav{
     text-align: center;
     padding: 30px;
     
-
 }
 
-.welcome{
+.find-pets{
     color:rgb(247, 246, 246);
     font-size: 25px;
     top: 50%;
@@ -70,7 +70,6 @@ nav{
     height: 400px;
 
     background-color: rgba(86, 44, 68, 0.627);
-
 
 }
 

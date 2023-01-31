@@ -22,6 +22,9 @@ body{
     padding-right: 0;
     padding-top: 0;
     background-color: rgb(226, 226, 226);
+
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 nav{
@@ -78,6 +81,12 @@ footer{
     color: rgba(0, 0, 0, 0.68);
     padding: 5px;
     background-color: rgb(176, 176, 177);
-    
-    
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.links{
+    text-decoration: none; 
+    color: rgba(0,0,0, 0.68);
 }
