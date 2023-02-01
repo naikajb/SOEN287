@@ -3,7 +3,7 @@ header{
     font-size: 40px;
     color: rgba(249, 224, 255, 0.888);
     text-align: center;
-    background-color: rgba(56, 86, 44, 0.6);
+    background-color: rgba(56, 86, 44, 0.845);
 
     margin:0;
     top:0;
@@ -21,7 +21,9 @@ body{
     margin-top:0;
     padding-right: 0;
     padding-top: 0;
-    background-color: rgb(226, 226, 226);
+    background-image: url(/a1_40227367/Q8/Images/background.jpeg);
+    
+    
 }
 
 nav{
@@ -30,11 +32,12 @@ nav{
     top:0;
     left:0;
     overflow: hidden;
+    padding-top: 120px;
 
     width: 25%;
     height: 100%;
     display:grid;
-    background-color: rgba(56, 86, 44, 0.627);
+    background-color: rgba(56, 86, 44, 0.845);
 
 }
 
@@ -69,7 +72,7 @@ nav{
     margin: 25px;
     height: 400px;
 
-    background-color: rgba(86, 44, 68, 0.627);
+    background-color: rgba(86, 44, 68, 0.99);
 
 
 }
