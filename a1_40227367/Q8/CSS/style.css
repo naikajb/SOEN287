@@ -67,7 +67,7 @@ body{
 
 fieldset{
     margin:30px;
-    background-color: rgba(245, 245, 220, 0.292);
+    background-color: rgba(223, 223, 220, 0.661);
 }
 
 input:hover {
@@ -96,14 +96,28 @@ input[type = submit], input[type=reset]{
     overflow:visible;
 
 }
-.content{
-    
+.content {
+    text-align: left;
     border:rgb(0, 0, 0) 2px dotted;
     border-radius: 30px;
     background-color: rgb(189, 146, 219);
     padding: 20px;
 }
 
+h2{
+    text-align: center;
+}
+
+h5{
+    font-weight: lighter;
+}
+
+.info{
+    background-color: rgba(240, 248, 255, 0.44);
+    padding: 20px;
+    border-radius: 20px;
+
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -126,8 +140,9 @@ input[type = submit], input[type=reset]{
 footer {
     background-color: rgba(116, 135, 117, 0.707);
     color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10p;
+    text-align: left;
+    padding: 10px;
+    
     
 
 }
