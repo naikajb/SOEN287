@@ -1,0 +1,108 @@
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+
+#logo{
+    height: 100px;
+    width: 150px;
+
+}
+
+header{
+    /*color: white;
+    text-align: center;
+    font-size: 50px;
+    height: 20%;*/
+    margin-left:25%;
+    position: fixed;
+    height: 120px;
+    width: 75%;
+    float: right;
+    background-color: rgb(92, 133, 55);
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 125px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.238);
+
+}
+
+nav{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    padding-top: 120px;
+    border-right: 3px solid rgba(0, 0, 0, 0.238);
+
+
+    background-color: rgb(92, 133, 55);
+    /*border: 1px solid rgba(255, 255, 255, 0);*/
+}
+
+.content{
+    color:rgb(247, 246, 246);
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+
+
+    justify-content: center;
+
+    border: 1px solid grey;
+    border-radius: 35px;
+    padding: 50px 45px; 
+    text-align:center;
+    margin-left: 25%;
+    top: 120px;
+    height: 400px;
+
+    background-color: rgba(86, 44, 68, 0.627);
+
+
+}
+
+.home-message{
+    padding: 60px;
+    background-color: rgba(0, 0, 255, 0.214);
+}
+.page:hover{
+    background-color: rgba(54, 50, 50, 0.689);
+}
+.page{
+    color: white;
+    display: block;
+    margin: 0px;
+    overflow:hidden ;
+    text-align:center; 
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+    border-top: 3px solid rgba(0, 0, 0, 0.238);
+}
+
+#last-page{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.238);
+}
+
+body{
+    background-color: rgba(232, 255, 212, 0.47);
+}
+
+.footer{
+    position: inherit;
+    margin-left: 25%;
+    background-color: rgb(175, 198, 179);
+    padding: 10px;
+    margin-top: 95%;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+

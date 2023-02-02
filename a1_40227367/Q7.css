@@ -1,17 +1,19 @@
+div {
+  border: 2px green dotted;
+  padding: 5px;
+  height: 200px;
+  height: 200px; 
 
-#first{
+  text-align: center;
+}
+
+span{
+  color: red;
+  font-weight: bold;
+}
+
+#first {
   position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-#second{
-    position: relative;
-    
-}
-
-.red{
-    color: red;
-    font-weight: bold;
-
+  top: 400px;
+  left: 400px;
 }
