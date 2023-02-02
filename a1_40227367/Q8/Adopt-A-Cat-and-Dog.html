@@ -2,38 +2,44 @@
 <html>
     <head>
         <Title> A Cat and Dog for All</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Title> A Cat and Dog for All</Title>
         <link rel = "stylesheet" href = "CSS/style.css">
     </head>
 
     <body>
         <header>
-            <table>
-                <tr>
-                    <td class = "company-name">
-                        A Cat and Dog For All
-                    </td>
-                    <td>
-                        <img id = "logo" src="logo.png" alt="logo" >
-                    </td>
-                </tr>
-            </table>
+            <div>
+                <table>
+                    <tr>
+                        <td class = "company-name">
+                            A Cat and Dog For All
+                        </td>
+                        <td>
+                            <a href="Adopt-A-Cat-and-Dog.html">
+                                <img id = "logo" src="logo.png" alt="logo" >
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div> 
         </header>
 
-        <nav>
+        <div class = "sidebar">
             <a href = "Adopt-A-Cat-and-Dog.html" class = "page"> Home Page </a>
             <a href = "Browse-pets.html" class = "page"> Browse Pets</a>
             <a href = "find-pets.html" class = "page"> Find Available Pets</a>
             <a href = " " class = "page"> Dog Care</a>
             <a href = " " class = "page"> Cat Care</a>
-            <a href = " " class = "page"> Have a Pet To Give Away</a>
+            <a href = "pet-givaway.html" class = "page"> Have a Pet To Give Away</a>
             <a href = " " class = "page" id ="last-page"> Contact Us</a>
-        </nav>
+        </div>
 
-        <div class = "content" > 
-            <div class="home-message">
+        <div class = "main" > 
+            <div class="content">
                 <h2>Our Mission</h2>
                     <p>
-                        Pet Rescuer's mission is to provide a safe home for rescued cats and
+                        At A Dog and Cat for All, we aim to provide a safe home for rescued cats and
                         dogs.
                     </p>
                     <p>
@@ -51,7 +57,7 @@
 
         <footer> 
             <div class = "footer">
-                Read our privacy statement <a href="">here. </a>
+                Read our privacy statement <span class = "statement"><a href="">here. </a></span>
              <a class ="links" href =""> | Home</a>
              <a class ="links" href =""> | Browse Pets</a>
              <a class ="links" href =""> | Find Pets</a>

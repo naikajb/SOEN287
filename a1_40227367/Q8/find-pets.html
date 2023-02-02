@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <Title> A Cat and Dog for All</Title>
-        <link rel = "stylesheet" href = "CSS/style.css">
-    </head>
+  <head>
+    <Title> A Cat and Dog for All</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Title> A Cat and Dog for All</Title>
+    <link rel = "stylesheet" href = "CSS/style.css">
+</head>
 
-    <body>
-        <header>
+<body>
+    <header>
+        <div>
             <table>
                 <tr>
                     <td class = "company-name">
                         A Cat and Dog For All
                     </td>
                     <td>
-                        <img id = "logo" src="logo.png" alt="logo" >
+                        <a href="Adopt-A-Cat-and-Dog.html">
+                            <img id = "logo" src="logo.png" alt="logo" >
+                        </a>
                     </td>
                 </tr>
             </table>
-        </header>
+        </div> 
+    </header>
 
-        <nav>
-            <a href = "Adopt-A-Cat-and-Dog.html" class = "page"> Home Page </a>
-            <a href = "Browse-pets.html" class = "page"> Browse Pets</a>
-            <a href = "find-pets.html" class = "page"> Find Available Pets</a>
-            <a href = " " class = "page"> Dog Care</a>
-            <a href = " " class = "page"> Cat Care</a>
-            <a href = " " class = "page"> Have a Pet To Give Away</a>
-            <a href = " " class = "page"> Contact Us</a>
-        </nav>
+    <div class = "sidebar">
+        <a href = "Adopt-A-Cat-and-Dog.html" class = "page"> Home Page </a>
+        <a href = "Browse-pets.html" class = "page"> Browse Pets</a>
+        <a href = "find-pets.html" class = "page"> Find Available Pets</a>
+        <a href = " " class = "page"> Dog Care</a>
+        <a href = " " class = "page"> Cat Care</a>
+        <a href = "pet-givaway.html" class = "page"> Have a Pet To Give Away</a>
+        <a href = " " class = "page" id ="last-page"> Contact Us</a>
+    </div>
 
-        <div class="form">
+    <div class = "main" > 
+        <div class="content">
+          <div class="form">
             <form>
               <fieldset class = "Cat Search">
                 <legend>Cat Form</legend>
@@ -114,7 +122,8 @@
               </fieldset>
             </form>
           </div>
-
+        </div>
+    </div>
         <footer> 
             <div class = "footer">
                  Read our privacy statement <a href="">here. </a>

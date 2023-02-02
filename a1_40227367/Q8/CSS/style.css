@@ -1,84 +1,49 @@
 *{
    margin: 0;
-   padding: 0;
-   
+   box-sizing: border-box;
 }
 
 #logo{
-    height: 100px;
-    width: 150px;
-
+    height: 110px;
+    width: 110px;
 }
 
 header{
-    /*color: white;
-    text-align: center;
-    font-size: 50px;
-    height: 20%;*/
-    margin-left:25%;
-    height: 120px;
-    width: 75%;
-    float: right;
-    background-color: rgb(92, 133, 55);
-
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 125px;
-    color: rgb(255, 255, 255);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.238);
+  text-align: center;
+  color: rgb(21, 21, 7);
+  background-color: rgb(92, 133, 55);
+  margin:0;
 
 }
 
 table{
     text-align: center;
-    margin-left: 100px; 
-    overflow: hidden;
+    margin-left: auto; 
+    margin-right:auto;
+    font-size: 30px;
+
 }
 
-nav{
+body{
+    background-color: rgba(232, 255, 212, 0.47);
+    padding-left: 25%;
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.sidebar {
     position: fixed;
+    top:0;
+    left:0;
     height: 100%;
     width: 25%;
     margin: 0;
     padding-top: 120px;
     border-right: 3px solid rgba(0, 0, 0, 0.238);
-
-
     background-color: rgb(92, 133, 55);
-    /*border: 1px solid rgba(255, 255, 255, 0);*/
+    
 }
-
-.content, .form{
-    color:rgb(247, 246, 246);
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-
-
-    justify-content: center;
-
-    border: 1px solid grey;
-    border-radius: 35px;
-    padding: 50px 45px; 
-    text-align:center;
-    margin-left: 25%;
-    top: 120px;
-    height: 400px;
-
-    background-color: rgba(86, 44, 68, 0.627);
-
-
-}
-
-.home-message{
-    padding: 60px;
-    background-color: rgba(0, 0, 255, 0.214);
-}
-.page:hover{
-    background-color: rgba(54, 50, 50, 0.689);
-}
-.page{
+.sidebar a {
     color: white;
     display: block;
     margin: 0px;
@@ -88,22 +53,90 @@ nav{
     text-align: center;
     padding: 30px;
     border-top: 3px solid rgba(0, 0, 0, 0.238);
+  
 }
+
+.main{
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 50px 50px;
+    height: 100%;
+    padding-bottom: 50%;
+    background-image: url(/a1_40227367/Q8/Images/background.jpeg);
+    
+}
+
+fieldset{
+    margin:30px;
+    background-color: rgba(245, 245, 220, 0.292);
+}
+
+input:hover {
+    background-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    border: solid grey 2px;
+}
+
+input[type =text], input[type=email],select, text{
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type = submit], input[type=reset]{
+    width: 100%;
+
+}
+
+
+#comments{
+    height: 200px;
+    text-align: start;
+    overflow:visible;
+
+}
+.content{
+    
+    border:rgb(0, 0, 0) 2px dotted;
+    border-radius: 30px;
+    background-color: rgb(189, 146, 219);
+    padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+.page:hover{
+    background-color: rgba(54, 50, 50, 0.689);
+}
+
 
 #last-page{
     border-bottom: 3px solid rgba(0, 0, 0, 0.238);
 }
 
-body{
-    background-color: rgba(232, 255, 212, 0.47);
+
+footer {
+    background-color: rgba(116, 135, 117, 0.707);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10p;
+    
+
 }
 
-.footer{
-    position: inherit;
-    margin-left: 25%;
-    background-color: rgb(175, 198, 179);
-    padding: 10px;
-    margin-top: 95%;
+.statement a{ 
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(6, 60, 6);
+
 }
 
 .links{
