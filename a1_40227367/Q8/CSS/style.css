@@ -89,7 +89,6 @@ input[type = submit], input[type=reset]{
 
 }
 
-
 #comments{
     height: 200px;
     text-align: start;
@@ -98,10 +97,13 @@ input[type = submit], input[type=reset]{
 }
 .content {
     text-align: left;
-    border:rgb(0, 0, 0) 2px dotted;
-    border-radius: 30px;
+    border:rgb(0, 0, 0) 2px solid;
+    border-radius: 20px;
     background-color: rgb(189, 146, 219);
     padding: 20px;
+    margin-top: 30px;
+    min-height: fit-content;
+
 }
 
 h2{
@@ -116,7 +118,6 @@ h5{
     background-color: rgba(240, 248, 255, 0.44);
     padding: 20px;
     border-radius: 20px;
-
 }
 
 @media screen and (max-height: 450px) {
@@ -155,5 +156,11 @@ footer {
 .links{
     text-decoration: none;
     color: black;
+}
+
+.content img{
+    margin: 5px;
+    height: 200px;
+    float: left;
 }
 
