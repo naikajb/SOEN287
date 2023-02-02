@@ -2,15 +2,21 @@
 <html>
     <head>
         <Title> A Cat and Dog for All</Title>
-        <link rel = "stylesheet" href = "CSS/find-pets.css">
+        <link rel = "stylesheet" href = "CSS/style.css">
     </head>
 
     <body>
         <header>
-            
-            <p class = "company-name">A Cat and Dog For All
-                <img class = "logo" src="logo.png" alt="logo" href="Adopt-A-and-Dog.html">
-            </p>
+            <table>
+                <tr>
+                    <td class = "company-name">
+                        A Cat and Dog For All
+                    </td>
+                    <td>
+                        <img id = "logo" src="logo.png" alt="logo" >
+                    </td>
+                </tr>
+            </table>
         </header>
 
         <nav>
@@ -23,30 +29,105 @@
             <a href = " " class = "page"> Contact Us</a>
         </nav>
 
-        <div class = "find-pets" > 
-            Welcome to the A Cat and Dog for All ! We hope to help you with all your animal needs.
+        <div class="form">
             <form>
-                <fieldset class = type> 
-                    type of animal: 
-                    <select>
-                        <option>Cat</option>
-                        <option> Dog</option>
-                    </select>
-                </fieldset>
+              <fieldset class = "Cat Search">
+                <legend>Cat Form</legend>
+                <p>Preferred breed of cat:
+                  <label><select name = "breed">
+                    <option>Persian</option>
+                    <option>Bengal</option>
+                    <option>Siamese</option>
+                    <option>Sphynx</option>
+                    <option>Munchkin cat</option>
+                    <option>Doesn't matter</option>
+                  </select></label>
+                </p>
+                <p>Preferred age of animal:
+                  <label><select name = "age">
+                    <option>0-3 months</option>
+                    <option> 4-6 months</option>
+                    <option> 7-11 months</option>
+                    <option> 1-2 years</option>
+                    <option> 3-5years</option>
+                    <option>5+ years</option>
+                  </select></label>
+                </p>
+  
+                <p> Preferred sex:
+                  <label> <input type ="radio" name="sex" value="male">Male</label>
+                  <label> <input type ="radio" name="sex" value="female">Female</label>
+                  <label> <input type ="radio" name="sex" value="noMatter">Doesn't matter</label>
+                </p>
+                
+                <p>Who does the animal need to get along with? 
+                  <label><input type ="checkbox" name="gets-along" value="cats">Other cats</label>
+                  <label><input type ="checkbox" name="gets-along" value="animals">Other animals</label>
+                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label>
+                </p>
+  
+                <p><label><input type="reset"></label>
+                  <label><input type="submit"></label>
+                </p>
+              
+              </fieldset>
+  
+              <fieldset class = "Dog Search">
+                <legend>Dog Form</legend>
+                <p>Preferred breed of dog:
+                  <label><select name = "breed">
+                    <option>Bulldog</option>
+                    <option>Golden Retriever</option>
+                    <option>Pomeranian</option>
+                    <option>Husky</option>
+                    <option>Chihuahua</option>
+                    <option>Doesn't matter</option>
+                  </select></label>
+                </p>
+                <p>Preferred age of animal:
+                  <label><select name = "age">
+                    <option>0-3 months</option>
+                    <option> 4-6 months</option>
+                    <option> 7-11 months</option>
+                    <option> 1-2 years</option>
+                    <option> 3-5years</option>
+                    <option>5+ years</option>
+                  </select></label>
+                </p>
+  
+                <p> Preferred sex:
+                  <label> <input type ="radio" name="sex" value="male">Male</label>
+                  <label> <input type ="radio" name="sex" value="female">Female</label>
+                  <label> <input type ="radio" name="sex" value="noMatter">Doesn't matter</label>
+                </p>
+                
+                <p>Who does the animal need to get along with? 
+                  <label><input type ="checkbox" name="gets-along" value="cats">Other cats</label>
+                  <label><input type ="checkbox" name="gets-along" value="animals">Other animals</label>
+                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label>
+                </p>
+  
+                <p><label><input type="reset"></label>
+                  <label><input type="submit"></label>
+                </p>
+              
+              </fieldset>
             </form>
-        
-        </div>
+          </div>
 
-        <footer> Read our privacy statement <a href="">here.</a>
-             |<a class ="links" href =""> Home</a>
-             |<a class ="links" href =""> Browse Pets</a>
-             |<a class ="links" href =""> Find Pets</a>
-             |<a class ="links" href =""> Cat</a>
-             |<a class ="links" href =""> Dog</a>
-             |<a class ="links" href =""> Give Away</a>
-             |<a class ="links" href =""> Contact Us</a> 
+        <footer> 
+            <div class = "footer">
+                 Read our privacy statement <a href="">here. </a>
+                <a class ="links" href =""> | Home</a>
+                <a class ="links" href =""> | Browse Pets</a>
+                <a class ="links" href =""> | Find Pets</a>
+                <a class ="links" href =""> | Cat</a>
+                <a class ="links" href =""> | Dog</a>
+                <a class ="links" href =""> | Give Away</a>
+                <a class ="links" href =""> | Contact Us</a> 
+            </div>
 
-    </footer>
+        </footer>
 
     
 
