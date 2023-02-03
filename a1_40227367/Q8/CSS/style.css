@@ -101,7 +101,7 @@ input[type = submit], input[type=reset]{
     border-radius: 20px;
     background-color: rgb(189, 146, 219);
     padding: 20px;
-    margin-top: 30px;
+    margin: 30px;
     min-height: fit-content;
 
 }
@@ -159,11 +159,22 @@ footer {
 }
 
 .content img{
-    margin: 5px;
+    margin: 15px;
     height: 200px;
     float: left;
 }
 
+#dog-care{
+    width: 20px;
+}
+
+.source{
+    font-size: 14px;
+    margin-top: 30px;
+}
+.content ul{
+    padding-left: 20px;
+}
 .overlay {
     position: fixed;
     top: 0;
