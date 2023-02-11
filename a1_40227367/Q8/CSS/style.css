@@ -81,9 +81,6 @@ input:hover , select:hover{
     border-radius: 5px;
     border: solid grey 2px;
 }
-.form{
-    
-}
 
 .infoForm{
     background-color: none;
@@ -116,19 +113,27 @@ input[type = submit], input[type=reset]{
     background-color: rgb(189, 146, 219);
     padding: 20px;
     min-height: fit-content;
-
     box-shadow: 5px 5px 5px 5px rgba(69, 69, 69, 0.46);
 }
+
+.content div{
+    background-color: rgb(240, 229, 229);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+}
+
+.dog-care img{
+   width: 500px;
+}
+
 .random{
     width: 60%;
     height: 600px;
 }
 
-.family-and-dog{
-   
-  
 
-}
 h2{
     text-align: center;
 };
@@ -187,9 +192,6 @@ footer {
     float: left;
 }
 
-#dog-care{
-    width: 20px;
-}
 
 .source{
     font-size: 14px;
