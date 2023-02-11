@@ -16,26 +16,11 @@ header{
   font-size: 30px;
 }
 
-table form{
-    text-align: left;
-    width: 70%;
-    margin:0;
-    font-size: 15px;
-}
-
-.form td img{
-    /*width: 100%;*/
-    size: 600px 600px;
-    
-    
-}
-
 table{
     text-align: center;
     margin-left: auto; 
     margin-right:auto;
     /*font-size: 30px;*/
-
 }
 
 body{
