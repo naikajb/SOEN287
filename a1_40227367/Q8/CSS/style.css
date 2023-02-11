@@ -11,16 +11,30 @@
 header{
   text-align: center;
   color: rgb(21, 21, 7);
-  background-color: rgb(92, 133, 55);
+  background-color: rgb(95, 108, 137);
   margin:0;
+  font-size: 30px;
+}
 
+table form{
+    text-align: left;
+    width: 70%;
+    margin:0;
+    font-size: 15px;
+}
+
+.form td img{
+    /*width: 100%;*/
+    size: 600px 600px;
+    
+    
 }
 
 table{
     text-align: center;
     margin-left: auto; 
     margin-right:auto;
-    font-size: 30px;
+    /*font-size: 30px;*/
 
 }
 
@@ -40,7 +54,7 @@ body{
     margin: 0;
     padding-top: 120px;
     border-right: 3px solid rgba(0, 0, 0, 0.238);
-    background-color: rgb(92, 133, 55);
+    background-color: rgb(95, 108, 137);
     
 }
 .sidebar a {
@@ -57,24 +71,39 @@ body{
 }
 
 .main{
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 50px 50px;
+    font-size: 15px; /* Increased text to enable scrolling */
+    padding: 30px 30px;
     height: 100%;
-    padding-bottom: 50%;
+    /*padding-bottom: 50%;*/
     background-image: url(/a1_40227367/Q8/Images/background.jpeg);
-    
 }
 
-fieldset{
+.Cat-Search, .Dog-Search{
     margin:30px;
     background-color: rgba(223, 223, 220, 0.661);
+    border-radius: 10px;
+    border: none;
 }
 
-input:hover {
-    background-color: rgb(139, 139, 139);
+.infoForm{
+    margin:30px;
+    border-radius: 10px;
+    border: none;
+}
+
+input:hover , select:hover{
+    background-color: rgb(222, 219, 219);
     border-radius: 5px;
     border: solid grey 2px;
 }
+.form{
+    
+}
+
+.infoForm{
+    background-color: none;
+}
+
 
 input[type =text], input[type=email],select, text{
     width: 100%;
@@ -98,17 +127,26 @@ input[type = submit], input[type=reset]{
 .content {
     text-align: left;
     border:rgb(0, 0, 0) 2px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(189, 146, 219);
     padding: 20px;
-    margin: 30px;
     min-height: fit-content;
 
+    box-shadow: 5px 5px 5px 5px rgba(69, 69, 69, 0.46);
+}
+.random{
+    width: 60%;
+    height: 600px;
 }
 
+.family-and-dog{
+   
+  
+
+}
 h2{
     text-align: center;
-}
+};
 
 h5{
     font-weight: lighter;

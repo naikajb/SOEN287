@@ -40,11 +40,13 @@
           <h2>Find the Right Pet for You</h2></br>
           <h5>Fill out one of the forms below to find the pet that will be the best fit for you and your family.</h5>
           <div class="form">
+
             <form>
-              <fieldset class = "Cat Search">
+              <fieldset class = "Cat-Search">
                 <legend>Cat Form</legend>
                 <p>Preferred breed of cat:
                   <label><select name = "breed">
+                    <option value =" " disabled selected>Select...</option>
                     <option>Persian</option>
                     <option>Bengal</option>
                     <option>Siamese</option>
@@ -55,6 +57,7 @@
                 </p></br>
                 <p>Preferred age of animal:
                   <label><select name = "age">
+                    <option disabled selected>Select...</option>
                     <option>0-3 months</option>
                     <option> 4-6 months</option>
                     <option> 7-11 months</option>
@@ -82,7 +85,7 @@
               
               </fieldset>
   
-              <fieldset class = "Dog Search">
+              <fieldset class = "Dog-Search">
                 <legend>Dog Form</legend>
                 <p>Preferred breed of dog:
                   <label><select name = "breed">
