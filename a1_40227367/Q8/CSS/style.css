@@ -63,7 +63,7 @@ body{
     background-image: url(/a1_40227367/Q8/Images/background.jpeg);
 }
 
-.Cat-Search, .Dog-Search{
+fieldset /*.Cat-Search, .Dog-Search*/{
     margin:30px;
     background-color: rgba(223, 223, 220, 0.661);
     border-radius: 10px;
@@ -117,7 +117,7 @@ input[type = submit], input[type=reset]{
 }
 
 .content div{
-    background-color: rgb(240, 229, 229);
+    /*background-color: rgba(231, 231, 231, 0.697);*/
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
@@ -129,8 +129,8 @@ input[type = submit], input[type=reset]{
 }
 
 .random{
-    width: 60%;
-    height: 600px;
+    width: 50%;
+    height: auto;
 }
 
 
