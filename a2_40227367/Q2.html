@@ -11,28 +11,32 @@
         <h1> JavaScript Array</h1>
 
         <h3>Print the elements of an array using toString()</h3>
-        <p id = "first" >Tggmgkgkghis is where the first array goes </p>
+        <p id = "first" >This is where the first array goes </p>
 
         <h3>Print the elements of an array using join()</h3>
-        <p id = "second" >This md ddkis where the second array goes </p>
+        <p id = "second" >This is where the second array goes </p>
 
         <h3>Print the elements of an array in the format of index: value</h3>
-        <p id = "third" >This is where the third array goes </p>
+        <p class = "third" id = "third" >This is where the third array goes </p>
 
         <script>
             <!--
-                const cities = ["Vancouver, Montreal, Toronto, Ottawa, Quebec, Victoria"];
+                const cities = ["Vancouver", "Montreal", "Toronto", "Ottawa", "Quebec", "Victoria"];
+                
+                //using toString() to print to screen
+                document.getElementById("first").innerHTML = cities.toString();
 
-                function firstArr(){
-                    let arr ;
-                    //for (let i = 0; i < cities.length; i++){
-                    //   arr = arr + cities[i] + ",";
-                    //}
+                //using join() to print to screen
+                document.getElementById("second").innerHTML = cities.join(" & ");
 
-                    return arr;
+                //using index:value format
+                let stringArr = " ";
+                for(i = 0; i < cities.length;i++){
+                    stringArr += i + ":"+ cities[i] + "</br>";
                 }
 
-                document.getElementById("first").innerHtml = cities.toString();
+                document.getElementById("third").innerHTML = stringArr;
+
 
             //-->
         </script>
