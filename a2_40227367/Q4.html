@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Q4: Calculate your order</title>
+        <meta charset = "utf-8"/>
+        <script type = "text/javascript" src = "Q4.js"></script>
+
+        <style>
+        
+           .quantity{
+            width: 15%;
+            margin-left: 7px;
+            
+           }
+
+           .form{
+            width: 500px;
+            border: 1px solid black;
+           }
+
+           .form{
+            padding: 20px;
+           }
+        </style>
+    </head>
+
+    <body>
+        <h2>Order Books Online</h2>
+        <div class = "form">
+            <!--<form>
+                <fieldset>-->
+                    <table >
+                        <tr>
+                            <th>Book</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+
+                        <tr>
+                            <td>Basic Web Programming</td>
+                            <td>
+                                <input class = "quantity" id = "webProg">
+                            </td>
+                            <td>$19.99</td>
+                        </tr>
+
+                        <tr>
+                            <td>Intro to PHP</td>
+                            <td>
+                                <input class = "quantity" id = "php">
+                            </td>
+                            <td>$86.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Advanced JQuery</td>
+                            <td>
+                                <input class = "quantity" id = "jquery">
+                            </td>
+                            <td>$55.00 </td>
+                        </tr>
+                    </table>
+
+            <div>
+                <pre>
+
+                </pre>
+                <button type ="submit" onclick="computeTotal()">Calculate the order</button>
+            </div>
+            <!--    </fieldset>
+            </form>-->
+
+        </div>
+
+        <div>
+            <p id= "orderResults" style ="font-weight: bold;">
+            </p>
+        </div>
+    </body>
+</html>
