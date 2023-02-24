@@ -27,15 +27,15 @@ function computeTotal(){
             let total3 = parseFloat(id3.value * 55.00);
             
 
-            var text = "Basic Web Programming "+"(Quantity="+id1.value+"): $"+total1;
+            var text = "<b> Basic Web Programming "+"(Quantity="+id1.value+"):</b> $"+total1;
             
-            text += "</br>Intro to PHP "+"(Quantity="+id2.value+"): $"+total2;
+            text += "</br><b>Intro to PHP "+"(Quantity="+id2.value+"):</b> $"+total2;
             
-            text += "</br>Advanced jQuery "+"(Quantity="+id3.value+"): $"+total3 + "</br>";
+            text += "</br><b>Advanced jQuery "+"(Quantity="+id3.value+"):</b> $"+total3 + "</br>";
   
             let total = total1 + total2 +total3;
 
-            text += "</br> Final Total: $" +total;
+            text += "</br><b> Final Total: </b>$" +total;
             
 
             document.getElementById("orderResults").innerHTML = text;

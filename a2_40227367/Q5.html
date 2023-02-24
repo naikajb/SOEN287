@@ -12,5 +12,21 @@
         <div id=”content”>
 
         </div>
+
+
+        <script>
+            function getUserInfo(){
+
+                let name = prompt("What is your full name?", "Type your name here");
+
+                let age = prompt("How old are you?");
+
+                let text = "Hi my name is " + name + "and I'm " + age + "years old.";
+                
+                document.getElementById("content").innerHTML = text;
+
+            }
+            getUserInfo();
+        </script>
     </body>
 </html>
