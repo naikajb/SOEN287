@@ -6,29 +6,30 @@
         
     </head>
     <body>
+
         <p>
             <strong>User Information:</strong>
         </p>
-        <div id=”content”>
 
+        <div id=”content”>
+            <p></p>
         </div>
 
 
         <script>
             function getUserInfo(){
 
-                
-
                 let name = prompt("What is your full name?", "Type your name here");
 
                 let age = prompt("How old are you?");
 
-                let text = "Hi my name is " + name + "and I'm " + age + "years old.";
-                
-                document.getElementById("content").innerHTML = text;
+                let text = "<p> Hi my name is " + name + "and I'm " + age + "years old.</p>";
 
+                document.getElementById("content").innerText = text;
+                
             }
             getUserInfo();
+           
         </script>
     </body>
 </html>
