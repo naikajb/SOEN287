@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <Title> A Cat and Dog for All</Title>
     <link rel = "stylesheet" href = "CSS/style.css">
+    <script type = "text/javascript" src = "JS/adopt.js"></script>
 </head>
 
 <body>
   <!--header with logo-->
     <header>
-        <div>
-            <table>
-                <tr>
-                    <td class = "company-name">
-                        A Cat and Dog For All
-                    </td>
-                    <td>
-                        <a href="Adopt-A-Cat-and-Dog.html">
-                            <img id = "logo" src="logo.png" alt="logo" >
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div> 
+      <div>
+        <table>
+            <tr>
+                <td class = "company-name">
+                    A Cat and Dog For All
+                </td>
+                <td>
+                    <a href="Adopt-A-Cat-and-Dog.html">
+                        <img id = "logo" src="logo.png" alt="logo" >
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id = "date" style = "border: 0.5px solid black; font-size: small;">this is where the date should be</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     </header>
 
     <!--side navigation-->
@@ -47,8 +53,8 @@
               <fieldset class = "Cat-Search">
                 <legend>Cat Form</legend>
                 <p>Preferred breed of cat:
-                  <label><select name = "breed">
-                    <option value =" " disabled selected>Select...</option>
+                  <label><select name = "breed" class = "breed" id = "breed">
+                    <option value ="" disabled selected>Select...</option>
                     <option>Persian</option>
                     <option>Bengal</option>
                     <option>Siamese</option>
@@ -59,7 +65,7 @@
                 </p></br>
                 <p>Preferred age of animal:
                   <label><select name = "age">
-                    <option disabled selected>Select...</option>
+                    <option value = ""disabled selected>Select...</option>
                     <option>0-3 months</option>
                     <option> 4-6 months</option>
                     <option> 7-11 months</option>
@@ -70,9 +76,12 @@
                 </p></br>
   
                 <p> Preferred sex:</br>
-                  <label> <input type ="radio" name="sex" value="male">Male</label></br>
-                  <label> <input type ="radio" name="sex" value="female">Female</label></br>
-                  <label> <input type ="radio" name="sex" value="noMatter">Doesn't matter</label>
+                  <input type ="radio" name="sex" value="male">
+                  <label for ="male"> Male</label></br>
+                  <input type ="radio" name="sex" value="female">
+                  <label for = "female">Female</label></br>
+                  <input type ="radio" name="sex" value="noMatter">
+                  <label for = "noMatter">Doesn't matter</label>
                 </p></br>
                 
                 <p>Who does the animal need to get along with? </br>
@@ -123,7 +132,7 @@
                 </p></br>
   
                 <p><label><input type="reset"></label>
-                  <label><input type="submit"></label>
+                  <label><input type="submit" onclick="validate()"></label>
                 </p>
               
               </fieldset>
