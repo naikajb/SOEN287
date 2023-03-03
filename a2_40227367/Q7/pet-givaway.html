@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <Title> A Cat and Dog for All</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <Title> A Cat and Dog for All</Title>
+        <link rel = "stylesheet" href = "CSS/style.css">
+    </head>
+    
+    <body>
+      <!--header with logo-->
+        <header>
+            <div>
+                <table class = "header">
+                    <tr>
+                        <td class = "company-name">
+                            A Cat and Dog For All
+                        </td>
+                        <td>
+                            <a href="Adopt-A-Cat-and-Dog.html">
+                                <img id = "logo" src="logo.png" alt="logo" >
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+        </header>
+    
+        <!-- Navigation bar of website-->
+        <div class = "sidebar">
+            <a href = "Adopt-A-Cat-and-Dog.html" class = "page"> Home Page </a>
+            <a href = "Browse-pets.html" class = "page"> Browse Pets</a>
+            <a href = "find-pets.html" class = "page"> Find Available Pets</a>
+            <a href = "Dog-Care.html" class = "page"> Dog Care</a>
+            <a href = "Cat-Care.html" class = "page"> Cat Care</a>
+            <a href = "pet-givaway.html" class = "page"> Have a Pet To Give Away</a>
+            <a href = "Contact.html" class = "page" id ="last-page"> Contact Us</a>
+        </div>
+        <!-- Main content of the page-->
+        <div class="main">
+            <div class = "content">
+            <H3>Register a pet to give away by filling out this form!</H3>
+            <div class = form>
+              <form class="animalInfo">
+                <fieldset class="infoForm">
+                  <p>Cat or dog?</p>
+                    <label>
+                      <select name ="type">
+                        <option value ="" disabled selected> Select...</option>
+                        <option>Cat</option>
+                        <option>Dog</option>
+                      </select>
+                    </label>
+                    <label><input type="radio" name="type" value="cat"> Cat</label>
+                    <label><input type="radio" name="type" value="dog"> Dog</label></br></br>
+                  <p>What's the breed of the pet?
+                    <label><input type = "text" name ="breed" ></label>
+                  </p></br>
+                  <p>How old is your animal? 
+                    <label><select name = "age">
+                      <option value ="" disabled selected> Select... </option>
+                      <option>0-3 months</option>
+                      <option> 4-6 months</option>
+                      <option> 7-11 months</option>
+                      <option> 1-2 years</option>
+                      <option> 3-5 years</option>
+                      <option>5+ years</option>
+                    </select></label>
+                  </p></br>
+                  <p>Animal gender?</p>
+                    <label><input type="radio" name="type" value="male"> Male</label>
+                    <label><input type="radio" name="type" value="female"> Female</label>
+                  </br></br>
+                  <p>Gets along with other animals?</p>
+                  <label><input type="radio" name="suitable" value="yes"> Yes</label>
+                    <label><input type="radio" name="suitable" value="no"> No</label></p></br>
+                  <p>Suitable for a family with small children?<p>
+                    <label><input type="radio" name="suitable" value="yes"> Yes</label>
+                    <label><input type="radio" name="suitable" value="no"> No</label></br></br>
+                  
+                  <p>
+                    <label>Comments about the animal (this is your place to brag about some special skills your pet may have!)<input id = "comments" type="text" name="comments" placeholder="write something"></label>
+                  </p></br>
+                  <p>Current owner's name</p>
+                    <label><input type="text" name="name" placeholder="first name"></label>
+                    <label><input type="text" name="name" placeholder="last name"></label>
+                  </br>
+                  <p>current owner's email
+                    <label><input type ="email" name="email" placeholder ="example@example.com"></label>
+                  </p></br>
+                  <p>
+                    <label><input type ="submit"></label>
+                    <label><input type="reset"></label>
+                  </p>
+    
+                </fieldset>
+              </form>
+          </div>
+        </div>
+    </div>
+    <footer> 
+      <div class = "footer">
+          Read our privacy statement<span class ="statement"><a href="#pop-up"> here. </a></span> 
+          |<a class ="links" href ="Adopt-A-Cat-and-Dog.html"> Home</a>
+          |<a class ="links" href ="Browse-pets.html"> Browse Pets</a>
+          |<a class ="links" href ="find-pets.html"> Find Pets</a>
+          |<a class ="links" href ="Cat-Care.html"> Cat</a>
+          |<a class ="links" href ="Dog-Care.html"> Dog</a>
+          |<a class ="links" href ="pet-givaway.html"> Give Away</a>
+          |<a class ="links" href ="Contact.html"> Contact Us</a> 
+      </div>
+
+      <div id = "pop-up" class = "overlay">
+          <div class="pop-up1">
+              <h4>Privacy Disclaimer</h4>
+              <a class = "close" href="#">&times;</a>
+              <div class="disclaimer">
+              While using the PET RESCUER website no data other than the necessary data will be collected.
+              This means that the only information collected will be that inputed into the necessary forms on the website. 
+              The information collected will not be sold or misused.
+              </div>
+          </div>
+      </div>
+
+    </footer>
+    </body>
+</html>
