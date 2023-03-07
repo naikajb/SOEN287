@@ -19,6 +19,7 @@ function getDate(){
 }
 getDate();
 
+
 function validate(){
     if(document.getElementById("breed").value == ""){
         alert('fill it out');
