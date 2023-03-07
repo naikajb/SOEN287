@@ -1,22 +1,21 @@
 let index = 0;
 
-let arrImages = ["pic1.webp", "pic2.webp"];
+let arrImages = ["pic1.webp","pic2.webp", "pic3.webp","pic4.webp"];
 
 function next(){
-    if ( n == arrImages.length - 1 ){
-        n = 0;
+    if ( index == arrImages.length - 1 ){
+        index = 0;
     }else{
-        n++;
+        index++;
     }
-
     document.getElementById("slideshow").src = arrImages[index];
 }
 
 function previous(){
-    if(n == 0){
-        n = 2;
+    if(index == 0){
+        index = 2;
     }else{
-        --n;
+        --index;
     }
     document.getElementById("slideshow").src = arrImages[index];
 }
