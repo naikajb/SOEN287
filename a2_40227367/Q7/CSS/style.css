@@ -20,6 +20,13 @@ header{
   font-size: 30px;
 }
 
+#date{
+    padding-left: 60%;
+    padding-bottom: 5px;
+    font-size: small;
+}
+
+
 .browse{
     max-width: 800px;
     position: relative;
@@ -28,7 +35,6 @@ header{
     border: solid black 1px;
     display: flex;
 }
-
 
 .next{
     right: 50px;
@@ -55,6 +61,7 @@ table{
     margin-left: auto; 
     margin-right:auto;
     /*font-size: 30px;*/
+    margin-bottom: 0;
 }
 
 body{
@@ -80,7 +87,7 @@ body{
     color: white;
     display: block;
     margin: 0px;
-    overflow:hidden ;
+    overflow:hidden;
     text-align:center; 
     text-decoration: none;
     text-align: center;
@@ -170,7 +177,7 @@ input[type = submit], input[type=reset]{
 
 h2{
     text-align: center;
-};
+}
 
 h5{
     font-weight: lighter;
