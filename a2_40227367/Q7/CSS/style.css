@@ -8,10 +8,6 @@
     width: 110px;
 }
 
-/*#date{
-    font-size: 10px;
-}*/
-
 header{
   text-align: center;
   color: rgb(21, 21, 7);
@@ -26,17 +22,47 @@ header{
     font-size: small;
 }
 
+.previous{
+    order: 1;
+    flex: 1;
+    border: solid;
 
+}
+
+.next{
+    order: 3;
+    flex: 1;
+    border: solid;
+}
+
+/*TODO fix so that the arrows are on left and right instead of top and bottom*/
 .browse{
     max-width: 800px;
     position: relative;
     margin: auto;
-    align-content: center;
-    border: solid black 1px;
     display: flex;
+    border: solid black 1px;
+    align-items: stretch;
+    flex-direction: row-reverse;
+
 }
 
-.next{
+
+#pet-browsing{
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    order: 2;
+    flex:3;
+}
+
+/*TODO fix size of image to adjust to window size*/
+#pet-browsing img{
+    width: auto;
+    height: auto;
+
+}
+/*.next{
     right: 50px;
     border-radius: 3px 0 0 3px;
 }
@@ -54,7 +80,7 @@ header{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
+}*/
 
 table{
     text-align: center;
@@ -123,9 +149,7 @@ input:hover , select:hover{
     border: solid grey 2px;
 }
 
-.infoForm{
-    background-color: none;
-}
+
 
 
 input[type =text], input[type=email],select, text{
