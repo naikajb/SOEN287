@@ -22,46 +22,58 @@ header{
     font-size: small;
 }
 
-.previous{
-    order: 1;
-    flex: 1;
-    border: solid;
+.browse{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
 
+.pet-browsing, .next, .previous{
+    border: 1px solid black;
+}
+
+.pet-browsing{
+}
+
+.previous{
 }
 
 .next{
-    order: 3;
-    flex: 1;
+}
+
+/*TODO fix so that the arrows are on left and right instead of top and bottom
+.browse{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+}
+
+.previous{
+    display: flex;
     border: solid;
 }
 
-/*TODO fix so that the arrows are on left and right instead of top and bottom*/
-.browse{
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    border: solid black 1px;
-    align-items: stretch;
-    flex-direction: row-reverse;
-
+.next{
+   display: flex;
+   border: solid;
 }
-
 
 #pet-browsing{
-    border: solid black 1px;
     display: flex;
+    border: solid black 1px;
     justify-content: center;
-    order: 2;
-    flex:3;
-}
+} */
 
-/*TODO fix size of image to adjust to window size*/
+/*TODO fix size of image to adjust to window size
 #pet-browsing img{
     width: auto;
     height: auto;
 
-}
+}*/
 /*.next{
     right: 50px;
     border-radius: 3px 0 0 3px;
@@ -119,7 +131,6 @@ body{
     text-align: center;
     padding: 30px;
     border-top: 3px solid rgba(0, 0, 0, 0.238);
-  
 }
 
 .main{
@@ -150,8 +161,6 @@ input:hover , select:hover{
 }
 
 
-
-
 input[type =text], input[type=email],select, text{
     width: 100%;
   padding: 12px;
@@ -175,7 +184,7 @@ input[type = submit], input[type=reset]{
     text-align: left;
     border:rgb(0, 0, 0) 2px solid;
     border-radius: 10px;
-    background-color: rgb(189, 146, 219);
+    background-color: rgba(202, 188, 211, 0.99);
     padding: 20px;
     min-height: fit-content;
     box-shadow: 5px 5px 5px 5px rgba(69, 69, 69, 0.46);
@@ -227,7 +236,7 @@ h5{
 
 
 #last-page{
-    border-bottom: 3px solid rgba(0, 0, 0, 0.238);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
 }
 
 
@@ -256,7 +265,6 @@ footer {
     height: 200px;
     float: left;
 }
-
 
 .source{
     font-size: 14px;
