@@ -22,26 +22,21 @@ header{
     font-size: small;
 }
 
-.browse{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: space-evenly;
-}
-
-.pet-browsing, .next, .previous{
-    border: 1px solid black;
-}
-
 .pet-browsing{
+    border: 3px solid;
 }
 
 .previous{
+
 }
 
-.next{
+.browse-container{
+    display: flex;
+    border: solid 1px black;
+    flex-direction: row;
+    justify-content: stretch;
 }
+
 
 /*TODO fix so that the arrows are on left and right instead of top and bottom
 .browse{
