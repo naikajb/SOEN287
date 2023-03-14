@@ -45,45 +45,46 @@
           <h5>Fill out one of the forms below to find the pet that will be the best fit for you and your family.</h5>
           <div class="form">
 
-            <form>
+            <form name = "catForm" onsubmit="checkEmptyCat()">
               <fieldset class = "Cat-Search">
                 <legend>Cat Form</legend>
                 <p>Preferred breed of cat:
                   <label><select name = "breed" class = "breed" id = "breed">
                     <option value ="" disabled selected>Select...</option>
-                    <option>Persian</option>
-                    <option>Bengal</option>
-                    <option>Siamese</option>
-                    <option>Sphynx</option>
-                    <option>Munchkin cat</option>
-                    <option>Doesn't matter</option>
+                    <option value = "persian">Persian</option>
+                    <option value = "bengal">Bengal</option>
+                    <option value = "siamese">Siamese</option>
+                    <option value = "sphinx">Sphynx</option>
+                    <option value = "munch">Munchkin cat</option>
+                    <option value = "noMatter">Doesn't matter</option>
                   </select></label>
                 </p></br>
                 <p>Preferred age of animal:
                   <label><select name = "age">
                     <option value = ""disabled selected>Select...</option>
-                    <option>0-3 months</option>
-                    <option> 4-6 months</option>
-                    <option> 7-11 months</option>
-                    <option> 1-2 years</option>
-                    <option> 3-5years</option>
-                    <option>5+ years</option>
+                      <option value = "3m">0-3 months</option>
+                      <option value = "6m"> 4-6 months</option>
+                      <option value = "11m"> 7-11 months</option>
+                      <option value = "2y"> 1-2 years</option>
+                      <option value = "5y"> 3-5years</option>
+                      <option value = "6y">5+ years</option>
                   </select></label>
                 </p></br>
   
                 <p> Preferred sex:</br>
                   <input type ="radio" name="sex" value="male">
-                  <label for ="male"> Male</label></br>
+                  <label > Male</label></br>
                   <input type ="radio" name="sex" value="female">
-                  <label for = "female">Female</label></br>
+                  <label >Female</label></br>
                   <input type ="radio" name="sex" value="noMatter">
-                  <label for = "noMatter">Doesn't matter</label>
+                  <label>Doesn't matter</label>
                 </p></br>
                 
                 <p>Who does the animal need to get along with? </br>
                   <label><input type ="checkbox" name="gets-along" value="cats">Other cats</label></br>
                   <label><input type ="checkbox" name="gets-along" value="animals">Other animals</label></br>
-                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label>
+                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label></br>
+                    <label><input type = "checkbox" name = "gets-along" value = "noMatter">Doesn't matter</label>
                 </p></br>
   
                 <p><label><input type="reset"></label>
@@ -91,27 +92,31 @@
                 </p>
               
               </fieldset>
-  
+
+            </form>
+              <form name = "dogForm" onsubmit="checkEmptyDog(1)">
               <fieldset class = "Dog-Search">
                 <legend>Dog Form</legend>
                 <p>Preferred breed of dog:
                   <label><select name = "breed">
-                    <option>Bulldog</option>
-                    <option>Golden Retriever</option>
-                    <option>Pomeranian</option>
-                    <option>Husky</option>
-                    <option>Chihuahua</option>
-                    <option>Doesn't matter</option>
+                      <option value ="" disabled selected>Select...</option>
+                      <option value = "bulldog">Bulldog</option>
+                    <option value = "golden">Golden Retriever</option>
+                    <option value = "pomeranian">Pomeranian</option>
+                    <option value = "husky">Husky</option>
+                    <option value = "chihuahua">Chihuahua</option>
+                    <option value = "noMatter">Doesn't matter</option>
                   </select></label>
                 </p></br>
                 <p>Preferred age of animal:
                   <label><select name = "age">
-                    <option>0-3 months</option>
-                    <option> 4-6 months</option>
-                    <option> 7-11 months</option>
-                    <option> 1-2 years</option>
-                    <option> 3-5years</option>
-                    <option>5+ years</option>
+                      <option value ="" disabled selected>Select...</option>
+                    <option value = "3m">0-3 months</option>
+                    <option value = "6m"> 4-6 months</option>
+                    <option value = "11m"> 7-11 months</option>
+                    <option value = "2y"> 1-2 years</option>
+                    <option value = "5y"> 3-5years</option>
+                    <option value = "6y">5+ years</option>
                   </select></label>
                 </p></br>
   
@@ -124,11 +129,12 @@
                 <p>Who does the animal need to get along with? </br>
                   <label><input type ="checkbox" name="gets-along" value="cats">Other cats</label></br>
                   <label><input type ="checkbox" name="gets-along" value="animals">Other animals</label></br>
-                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label>
+                  <label><input type ="checkbox" name="gets-along" value="kids">Small children</label></br>
+                    <label><input type = "checkbox" name = "gets-along" value = "noMatter">Doesn't matter</label>
                 </p></br>
   
                 <p><label><input type="reset"></label>
-                  <label><input type="submit" onclick="validate()"></label>
+                  <label><input type="submit"></label>
                 </p>
               
               </fieldset>
