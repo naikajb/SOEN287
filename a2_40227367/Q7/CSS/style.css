@@ -22,6 +22,11 @@ header{
     font-size: small;
 }
 
+.interest{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+}
 .browsePets{
     min-width: auto;
     width: 100%;
@@ -35,7 +40,6 @@ header{
     margin-top: 20px;
     padding: 10px;
 }
-
 
 
 table{
