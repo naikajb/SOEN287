@@ -95,12 +95,17 @@ body{
     margin-top: 20px;
     padding: 10px;
 }
+
+.browsePets div img{
+    margin-left: 10%;
+}
 .browsingInfo{
     /*border: solid;*/
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 18px;
 }
 fieldset /*.Cat-Search, .Dog-Search*/{
     margin:30px;
