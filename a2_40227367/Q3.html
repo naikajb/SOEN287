@@ -8,8 +8,38 @@
     </head>
 
     <body>
-        <h3>Function: Add Numbers </h3>
-        <p id = "add"></p>
+        <div>
+            <h3>Function: Add Numbers </h3>
+            <p> 1 2 3 4 5</p>
+            <button id = "addButton" onclick = "addNumber([1,2,3,4,5])">Click me to add the numbers above together</button>
+            <p id = "add"></p>
+
+            <h3>Function: Find Max Number</h3>
+            <p>1, 4, 6, 34, 234, 6 ,9, 20</p>
+            <button id = "maxButton" onclick = "findMax()">Find max number </button>
+            <p id = "max"></p>
+
+            <h3>Function: addOnlyNumbers</h3>
+            <p> This is the array: ['1.0Hello','goodbye',13,43,'2']</p>
+            <button id = "onlyNumbers" onclick="addOnlyNumbers(['1.0Hello','goodbye',13,43,'2'])" >Click to add together the numbers in the array</button>
+            <p id = "onlyNums"></p>
+
+            <h3>Function: Get Digits</h3>
+            <p>The string analyzed is : "There are 3 potatoes, 2 apples, and 45 bananas in the each of the 50 baskets."</p>
+            <button id="digitsButton" onclick = "getDigits('There are 3 potatoes, 2 apples, and 45 bananas in the each of the 50 baskets.')">Get the digits in the sentence</button>
+            <p id = "digits"></p>
+
+            <h3>Function: Reverse the string</h3>
+            <p>The String to be reversed is: "Hello, my function works!"</p>
+            <button id="reverseButton" onclick = "reverseString('Hello, my function works!')">Reverse the String</button>
+            <p id ="reverse"></p>
+
+            <h3>Function: Get the Current Date</h3>
+            <button onclick = "getCurrentDate()" id = "dateButton">Get the Current Date</button>
+            <p id = "date"></p>
+        </div>
+
+
     </body>
 
 
