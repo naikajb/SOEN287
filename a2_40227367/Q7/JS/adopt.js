@@ -50,28 +50,41 @@ function checkEmptyCat(){
 
 // to validate the pet-giveaway form
 function validate(){
-    let type = document.forms["animalInfo"]["type"].value;
-    let breed = document.forms["animalInfo"]["breed"].value;
-    let comments = document.forms["animalInfo"]["comments"].value;
-    let age = document.forms["animalInfo"]["age"].value;
-    let sex = document.forms["animalInfo"]["sex"].value;
-    let anim = document.forms["animalInfo"]["suitableAnim"].value;
-    let kids = document.forms["animalInfo"]["suitableKids"].value;
-    let fname = document.forms["animalInfo"]["fname"].value;
-    let lname = document.forms["animalInfo"]["lname"].value;
-    let email = document.forms["animalInfo"]["email"].value;
+   let gender = document.querySelector('input[name = "sex"]:checked');
+   let statement = "These are problems in your input:\n";
+   let valid = true;
 
-    if(type.length === 0 || breed.length === 0 || comments.length === 0 || age.length === 0|| sex.length === 0 ||anim.length === 0 || kids.length === 0 || kids.length === 0 || fname.length === 0 || lname.length === 0 || email.length === 0){
-        alert("Make sure all input fields have been filled out.");
+   if(gender ==null){
+       statement += "\t- make sure a gender has been selected.\n"
+       valid = false;
+   }
+
+
+   let kids = document.querySelector('input[name = "suitableKids"]:checked');
+   if (kids == null){
+       statement += "\t- tell us if your pet gets along with other kids and animals.\n";
+       valid = false;
+   }
+
+   let pets = document.querySelector('input[name = "suitablePets"]:checked');
+    if (pets == null){
+        valid = false;
     }
 
+    let first = document.getElementById('fname').value;
+    let num = first.match(/\d+/g);
 
-    if(fname.search(/\d/)===-1 || lname.search(/\d/)=== -1) {
-        alert("No digits allowed in name fields. ");
+    let last = document.getElementById('lname').value;
+    num += last.match(/\d+/g);
+
+    if(num != ""){
+        statement += "\t- Name fields should not have numbers in them."
+        valid = false;
     }
 
-
-
+    if(!valid){
+        alert(statement);
+    }
 
 }
 

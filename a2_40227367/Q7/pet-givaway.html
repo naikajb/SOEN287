@@ -46,7 +46,7 @@
               <form class = "animalInfo" onsubmit = "validate()">
                 <fieldset class = "infoForm">
                     <label>Cat or dog?
-                      <select name ="type">
+                      <select name ="type"  required>
                         <option value ="" disabled selected> Select...</option>
                         <option value = "cat">Cat</option>
                         <option value = "dog">Dog</option>
@@ -54,11 +54,11 @@
                     </label>
 
                   <p></br>What's the breed of the pet?
-                      <input type = "text" name ="breed" placeholder = "write something">
+                      <input type = "text" name ="breed" placeholder = "write something" required>
                     <label></label>
                   </p></br>
                   <p>How old is your animal? 
-                    <label><select name = "age">
+                    <label><select name = "age" required>
                       <option value = "" disabled selected> Select... </option>
                         <option value = "3m">0-3 months</option>
                         <option value = "6m"> 4-6 months</option>
@@ -76,19 +76,19 @@
                   <label><input type="radio" name="suitableAnim" value="yes"> Yes</label>
                     <label><input type="radio" name="suitableAnim" value="no"> No</label></p></br>
                   <p>Suitable for a family with small children?</p>
-                    <label><input type="radio" name="suitableKids" value="yes"> Yes</label>
+                    <label><input type="radio" name="suitableKids" value="yes" > Yes</label>
                     <label><input type="radio" name="suitableKids" value="no"> No</label></br></br>
                   
                   <p>
                     <label>Comments about the animal (this is your place to brag about some special skills your pet may have!)
-                        <input id = "comments" type="text" name="comments" placeholder="write something"></label>
+                        <input id = "comments" type="text" name="comments" placeholder="write something" required ></label>
                   </p></br>
                   <p>Current owner's name</p>
-                    <label><input type="text" name="fname" placeholder="first name"></label>
-                    <label><input type="text" name="lname" placeholder="last name"></label>
+                    <label><input type="text" name="fname" id = "fname" placeholder="first name" required></label>
+                    <label><input type="text" name="lname" id = "lname" placeholder="last name" required></label>
                   </br>
                   <p>current owner's email
-                    <label><input type ="email" name="email" placeholder ="example@example.com"></label>
+                    <label><input type ="email" name="email" placeholder ="example@example.com" required></label>
                   </p></br>
                   <p>
                     <label><input type ="submit"></label>
