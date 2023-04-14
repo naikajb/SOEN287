@@ -20,18 +20,21 @@
             <div class = "content">
                 <h2>SIGN UP</h2></br>
                 <p> Please fill in this form to create an account</p></br>
-                <div style = "border: 1px solid grey;"></div></br>
+                <hr>
 
                 <form action = "" method = "post" class = "createAccount">
-                    <label style = "font-size: 15px;font-weight: bold;">USERNAME</label>
-                    <input type = "text" name = "username" placeholder="type in your username" required>
+                    <div class = "signUpInputs">
+                        <label style = "font-size: 15px;font-weight: bold;">USERNAME</label>
+                        <input type = "text" name = "username" placeholder="type in your username" required>
 
-                    <label style = "font-size: 15px;font-weight: bold;"> PASSWORD </label>
-                    <input type = "password" name = "password" placeholder="type in your password" required>
+                        <label style = "font-size: 15px;font-weight: bold;"> PASSWORD </label>
+                        <input type = "password" name = "password" placeholder="type in your password" required>
+                    </div>
 
-
-                    <button type="button" id="cancelbtn" class = "button" >Cancel</button>
-                    <button type="submit" id="signupbtn" class = "button">Sign Up</button>
+                    <div class = "submission">
+                        <button type="button" id="cancelbtn" class = "button" >Cancel</button>
+                        <button type="submit" id="signupbtn" class = "button">Sign Up</button>
+                    </div>
                 </form>
             </div>
         </div>
