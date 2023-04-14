@@ -7,6 +7,7 @@
         <a href = "Dog-Care.php" class = "page"> Dog Care</a>
         <a href = "Cat-Care.php" class = "page"> Cat Care</a>
         <a href = "pet-givaway.html" class = "page"> Have a Pet To Give Away</a>
+        <a href = "create-account.php" class = "page"> Create An Account</a>
         <a href = "Contact.html" class = "page" id ="last-page"> Contact Us</a>
     </div>
     </body>
