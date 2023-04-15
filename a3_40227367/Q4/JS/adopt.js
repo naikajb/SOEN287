@@ -31,7 +31,7 @@ function checkEmptyDog(){
    let z = document.forms["dogForm"]["sex"].value;
    let k = document.forms["dogForm"]["gets-along"].value;
 
-   if( x.length == 0 || y.length == 0|| z.length == 0|| k.length == 0){
+   if( x.length == "" || y.length == ""|| z.length == ""|| k.length == ""){
        alert("Make sure all input fields have been filled out.");
    }
 }
@@ -42,14 +42,14 @@ function checkEmptyCat(){
     let z = document.forms["catForm"]["sex"].value;
     let k = document.forms["catForm"]["gets-along"].value;
 
-    if( x.length === 0 || y.length === 0|| z.length === 0|| k.length === 0){
+    if( x.length == "" || y.length == ""|| z.length =="" || k.length == ""){
         alert("Make sure all input fields have been filled out.")
     }
 
 }
 
 // to validate the pet-giveaway form
-function validate(){
+/*function validate(){
    let gender = document.querySelector('input[name = "sex"]:checked');
    let statement = "These are problems in your input:\n";
    let valid = true;
@@ -86,5 +86,5 @@ function validate(){
         alert(statement);
     }
 
-}
+}*/
 

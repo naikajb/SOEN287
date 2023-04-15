@@ -178,8 +178,9 @@ h2{
     text-align: center;
 }
 
-h5{
+h4{
     font-weight: lighter;
+    padding-left: 40px;
 }
 
 .info{
@@ -307,9 +308,7 @@ footer {
       margin-bottom: 20px;
   }
 
-.button:hover {
-    opacity:1;
-}
+
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
@@ -328,19 +327,19 @@ input[type=text]:focus, input[type=password]:focus {
 
 /*TODO put space between submit button and cancel */
 /* Extra styles for the cancel button */
-#cancelbtn {
+#loginbtn {
     padding: 14px 20px;
-    background-color: rgba(231, 59, 31, 0.86);
+    background-color: rgba(154, 147, 147, 0.58);
 }
 
 /* Float cancel and signup buttons and add an equal width */
-#cancelbtn, #signupbtn {
+#loginbtn, #signupbtn {
     float: left;
     width: 50%;
 }
 
 @media screen and (max-width: 300px) {
-    #cancelbtn, #signupbtn {
+    #loginbtn, #signupbtn {
         width: 100%;
     }
 }

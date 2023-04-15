@@ -19,7 +19,7 @@
         <div class = "main" >
             <div class="content">
                 <h2>Find the Right Pet for You</h2><br/>
-                <h5>Fill out one of the forms below to find the pet that will be the best fit for you and your family.</h5>
+                <h4>Fill the <b>two</b> forms to find your perfect pets</h4>
 
                 <div class="form">
                     <form name = "catForm" onsubmit="checkEmptyCat()">

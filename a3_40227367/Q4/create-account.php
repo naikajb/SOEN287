@@ -24,8 +24,8 @@
 
                 <form action = "accounts.txt" method = "post" class = "createAccount">
                     <div class = "signUpInputs">
-                        <label style = "font-size: 15px;font-weight: bold;">USERNAME</label>
-                        <input type = "text" name = "username" placeholder="type in your username" required>
+                        <label for = "username" style = "font-size: 15px;font-weight: bold;" >USERNAME</label>
+                        <input type = "text" name = "username" placeholder="type in your username" pattern="[a-zA-Z0-9]+" required>
                         <p class = "requirements" >
                             <li style = "opacity: 70%;font-size: 10px;">Username must have only digits and letters</li>
                         </p></br>
@@ -42,21 +42,63 @@
                     </p>
 
                     <div class = "submission">
-                        <button type="button" id="cancelbtn" class = "button" >Cancel</button>
-                        <button type="submit" id="signupbtn" class = "button">Sign Up</button>
+                        <input type="submit" id="submitbtn" class = "button"  value = "Sign Up!"></input>
+                        <a href = "login.php" style = "text-decoration: none;color: black;"> Login<!--</button>-->
                     </div>
-
-
                 </form>
+
+                <div>
+                    <?php
+
+                    if(isset($_POST['submit'])){
+                        $user = $_POST['username'];
+                        $pass =  $_POST['password'];
+
+                        if(!empty($user) && !empty($pass)){
+                            if(preg_match("/[A-Za-z0-9]/", $user) && preg_match("/((?!\d*$)(?![a-z]*$)[a-z0-9]{4,10})$/", $pass)){
+                                extract($_REQUEST);
+                                $file=fopen("loginFile.txt", "a");
+
+                                $user_pass = file_get_contents("loginFile.txt");
+                                $user_pass = explode("\n",$user_pass);
+                                $userArray = array();
+                                foreach($user_pass as $value){
+                                    $split = explode(':', $value);
+                                    $userArray[$split[0]] = $split[0];
+                                }
+
+                                if (isset($userArray[$_POST['username']])) {
+                                    echo '<script>alert("Username already exists");</script>';
+                                }
+
+                                else{
+                                    fwrite($file, $user .":");
+                                    fwrite($file, $pass . "\n");
+                                    fclose($file);
+                                    echo '<script>alert("You Have successfully created an Account. You are now ready to Log in");</script>';
+                                }
+
+                            }
+
+                            else{
+                                echo '<script>alert("NOT THE CORRECT FORMAT. PLEASE TRY AGAIN");</script>';
+                            }
+                        }
+
+                        else{
+                            echo '<script>alert("Username Field or Password Field was empty");</script>';
+                        }
+                    }
+
+                    ?>
+                </div>
             </div>
         </div>
+
+
 
         <footer>
             <?php include 'footer.php';?>
         </footer>
     </body>
 </html>
-
-<?php
-    require 'signup.php';
-?>
