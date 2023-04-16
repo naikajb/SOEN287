@@ -65,7 +65,7 @@
         <p> Type in your username and password to long into your account</p></br>
         <hr>
 
-        <form action = "accounts.txt" method = "post" class = "createAccount">
+        <form action = "Desktop/SOEN287other/a3_40227367/Q4/files/accounts.txt" method = "post" class = "createAccount">
             <div class = "signUpInputs">
                 <label style = "font-size: 15px;font-weight: bold;" >USERNAME</label>
                 <input type = "text" name = "username" placeholder="type in your username" pattern="[a-zA-Z0-9]+" required>

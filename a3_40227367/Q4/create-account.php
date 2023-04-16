@@ -1,3 +1,59 @@
+<?php
+
+if(isset($_POST['submit'])){
+    $user = $_POST['username'];
+    $pass =  $_POST['password'];
+
+    $file = fopen('../files/accounts.txt', 'a+');
+    $text = $user.":".$pass."\n";
+
+    if(strpos(file_get_contents("..files/accounts.txt"),$user)!== false && empty($user) !== true && empty($pass)!==true){
+        echo "<script>alert(\"This username cannot be used\")</script>)";
+        exit();
+    }else if (!strpos(file_get_contents("..files/accounts.txt"), $user) && empty($user) !== true && empty($pass)!==true){
+        fwrite($file, $text);
+        echo "<script>alert(\"Your account has been created! You are ready to login\")</script>";
+    }
+
+    fclose($file);
+   /* if(!empty($user) && !empty($pass)){
+        if(preg_match("/[A-Za-z0-9]/", $user) && preg_match("/((?!\d*$)(?![a-z]*$)[a-z0-9]{4,10})$/", $pass)){
+            extract($_REQUEST);
+            $file=fopen("loginFile.txt", "a");
+
+            $user_pass = file_get_contents("loginFile.txt");
+            $user_pass = explode("\n",$user_pass);
+            $userArray = array();
+            foreach($user_pass as $value){
+                $split = explode(':', $value);
+                $userArray[$split[0]] = $split[0];
+            }
+
+            if (isset($userArray[$_POST['username']])) {
+                echo '<script>alert("Username already exists");</script>';
+            }
+
+            else{
+                fwrite($file, $user .":");
+                fwrite($file, $pass . "\n");
+                fclose($file);
+                echo '<script>alert("You Have successfully created an Account. You are now ready to Log in");</script>';
+            }
+
+        }
+
+        else{
+            echo '<script>alert("NOT THE CORRECT FORMAT. PLEASE TRY AGAIN");</script>';
+        }
+    }
+
+    else{
+        echo '<script>alert("Username Field or Password Field was empty");</script>';
+    }*/
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -22,7 +78,7 @@
                 <p> Please fill in this form to create an account</p></br>
                 <hr>
 
-                <form action = "accounts.txt" method = "post" class = "createAccount">
+                <form action = "" method = "post" class = "createAccount">
                     <div class = "signUpInputs">
                         <label for = "username" style = "font-size: 15px;font-weight: bold;" >USERNAME</label>
                         <input type = "text" name = "username" placeholder="type in your username" pattern="[a-zA-Z0-9]+" required>
@@ -46,52 +102,6 @@
                         <a href = "login.php" style = "text-decoration: none;color: black;"> Login<!--</button>-->
                     </div>
                 </form>
-
-                <div>
-                    <?php
-
-                    if(isset($_POST['submit'])){
-                        $user = $_POST['username'];
-                        $pass =  $_POST['password'];
-
-                        if(!empty($user) && !empty($pass)){
-                            if(preg_match("/[A-Za-z0-9]/", $user) && preg_match("/((?!\d*$)(?![a-z]*$)[a-z0-9]{4,10})$/", $pass)){
-                                extract($_REQUEST);
-                                $file=fopen("loginFile.txt", "a");
-
-                                $user_pass = file_get_contents("loginFile.txt");
-                                $user_pass = explode("\n",$user_pass);
-                                $userArray = array();
-                                foreach($user_pass as $value){
-                                    $split = explode(':', $value);
-                                    $userArray[$split[0]] = $split[0];
-                                }
-
-                                if (isset($userArray[$_POST['username']])) {
-                                    echo '<script>alert("Username already exists");</script>';
-                                }
-
-                                else{
-                                    fwrite($file, $user .":");
-                                    fwrite($file, $pass . "\n");
-                                    fclose($file);
-                                    echo '<script>alert("You Have successfully created an Account. You are now ready to Log in");</script>';
-                                }
-
-                            }
-
-                            else{
-                                echo '<script>alert("NOT THE CORRECT FORMAT. PLEASE TRY AGAIN");</script>';
-                            }
-                        }
-
-                        else{
-                            echo '<script>alert("Username Field or Password Field was empty");</script>';
-                        }
-                    }
-
-                    ?>
-                </div>
             </div>
         </div>
 
