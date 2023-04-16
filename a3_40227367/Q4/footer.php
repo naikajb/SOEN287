@@ -4,7 +4,7 @@
     <div class = "footer">
         <!--Privacy statement pop-up -->
         Read our privacy statement<span class ="statement"><a href="#pop-up"> here. </a></span>
-        |<a class ="links" href ="home.php"> Home</a>
+        |<a class ="links" href ="Desktop/SOEN287other/a3_40227367/Q4/index.php"> Home</a>
         |<a class ="links" href ="find-pets.php"> Find Pets</a>
         |<a class ="links" href ="Cat-Care.php"> Cat</a>
         |<a class ="links" href ="Dog-Care.php"> Dog</a>

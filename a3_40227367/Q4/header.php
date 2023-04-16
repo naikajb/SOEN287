@@ -8,7 +8,7 @@
                         A Cat and Dog For All
                     </td>
                     <td>
-                        <a href="home.php">
+                        <a href="Desktop/SOEN287other/a3_40227367/Q4/index.php">
                             <img id = "logo" src="logo.png" alt="logo" >
                         </a>
                     </td>
