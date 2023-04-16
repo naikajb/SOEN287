@@ -1,44 +1,46 @@
-    <!DOCTYPE html>
-    <html lang ="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <Title> A Cat and Dog for All</Title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-        <Title> A Cat and Dog for All</Title>
-        <link rel="stylesheet" href="CSS/style.css">
-        <script type = "text/javascript" src="JS/adopt.js"></script>
-    </head>
+<head>
+    <Title> A Cat and Dog for All</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <Title> A Cat and Dog for All</Title>
+    <link rel="stylesheet" href="Desktop/SOEN287other/a3_40227367/Q4/CSS/style.css">
+    <script type="text/javascript" src="Desktop/SOEN287other/a3_40227367/Q4/JS/adopt.js"></script>
+</head>
 
-    <body>
-    <header>
-        <?php include 'header.php';?>
+<body>
+<header>
+    <?php include 'header.php';?>
     </header>
 
     <div class="sidebar">
         <?php include 'sidebar.php';?>
     </div>
 
-    <div class="main">
-        <div class="content">
-            <h2>How to Take Care of Your Cat</h2>
-            <h5>
-                Have you recently added a feline friend to your family? Congratulations! We know you’ll be thrilled to
-                have your new cat in your home.
-                Read on for useful tips for new cat parents, and for those looking to brush up on their pet care skills.
-            </h5></br>
-            <div class = "dog-care">
-                <p>
-                    <img id="cat-image" alt="Women with cat" src="Images/cat-care_general-cat-care_body1-right.jpg"
-                         alt="cat"></br>
-                </p>
-            </div>
-            <div class = "care">
-                <h3>Feeding</h3>
-                <ul>
-                    <li>Cats need taurine, an amino acid, for their heart and eye health. </li>
-                    <li>Fresh and clean water is necessary at all times, and washing your cat;s water bowl on a daily is
-                        recommended.</li>
-                    <li>Treats should make up at most 10% of your cat's diet.</li>
+<div class="main">
+    <div class="content">
+        <h2>How to Take Care of Your Cat</h2>
+        <h5>
+            Have you recently added a feline friend to your family? Congratulations! We know you’ll be thrilled to
+            have your new cat in your home.
+            Read on for useful tips for new cat parents, and for those looking to brush up on their pet care skills.
+        </h5></br>
+        <div class="dog-care">
+            <p>
+                <img id="cat-image" alt="Women with cat"
+                     src="Desktop/SOEN287other/a3_40227367/Q4/Images/cat-care_general-cat-care_body1-right.jpg"
+                     alt="cat"></br>
+            </p>
+        </div>
+        <div class="care">
+            <h3>Feeding</h3>
+            <ul>
+                <li>Cats need taurine, an amino acid, for their heart and eye health.</li>
+                <li>Fresh and clean water is necessary at all times, and washing your cat;s water bowl on a daily is
+                    recommended.
+                </li>
+                <li>Treats should make up at most 10% of your cat's diet.</li>
                     <li>Many people feed baby food to a cat or kitten who is refusing food or not feeling well.
                         Please read labels carefully: If the baby food contains onion or garlic powder, your pet could
                         be poisoned.</li>

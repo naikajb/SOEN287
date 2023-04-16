@@ -1,1 +1,1 @@
-The Pet Adoption Website is located at:  https://adopt-a-pet-project.000webhostapp.com/create-account.php
+All the questions for the assignment are located at : https://adopt-a-pet-project.000webhostapp.com

@@ -1,52 +1,16 @@
 <?php
     session_start();
 
-    if(!isset($_SESSION['username'])) {
-        header("Location: login.php");
-        exit();
-    } else{
-        if (isset($_POST['logoutacc'])){
-        session_unset();
-        session_destroy();
-        echo '<script>alert("You have now logged out");</script>';
-        exit();
+if (isset($_POST['submit'])) {
+    $_SESSION['counter'] += 1;
+    $file = fopen('../files/availablePetInformation.txt', 'a');
+    if ($_POST["breed"] !== "DoesntMatter") {
+        $text = $_SESSION["counter"] . ":" . $_SESSION["username"] . ":" . $_POST["type"] . ":" . $_POST["sex"] . ":" . $_POST["breed"] . ":" . $_POST["age"] . "\n";
+    } else {
+        $text = $_SESSION["counter"] . ":" . $_SESSION["username"] . ":" . $_POST["type"] . ":" . $_POST["sex"] . ":" . $_POST["breed"] . ":" . $_POST["age"] . "\n";
     }
-        if (isset($_POST['giveawaysubmit'])){
-            $user = $_SESSION['username'];
-            $petsList = $_POST['givepet'];
-            $breed = $_POST['givebreed'];
-            $age = $_POST['giveage'];
-            $gender = $_POST['givegender'];
-            $alongList = $_POST['givealong'];
-            $smallchildList = $_POST['givechild'];
-            $fname = $_POST['firstname'];
-            $lname = $_POST['lastname'];
-            $email = $_POST['email'];
-
-            $file = fopen("givePet.txt", "a");
-            $lines = count(file("givePet.txt")) +1;
-            fwrite($file, $lines .":");
-            fwrite($file, $user .":");
-            foreach ($petsList as $pets) {
-                fwrite($file, $pets .':');
-            }
-
-            fwrite($file, $breed .":");
-            fwrite($file, $age .":");
-            fwrite($file, $gender .":");
-
-            foreach ($alongList as $along) {
-                fwrite($file, $along .':');
-            }
-            foreach ($smallchildList as $smallchild) {
-                fwrite($file, $smallchild ."\n");
-            }
-            //fwrite($file, $fname .":");
-            //fwrite($file, $lname .":");
-            //fwrite($file, $email ."\n");
-            fclose($file);
-        }
-    }
+    fwrite($file, $text);
+}
 ?>
 
 <!DOCTYPE html>
@@ -75,11 +39,6 @@
 
         <H3>Register a pet to give away by filling out this form!</H3>
         <div class = "form">
-
-            <form method = "post" name = "logout">
-                <span style= style= "color: black;">Welcome USER: <?php echo $_SESSION['username'] ?> </span>
-                <button style="float: right; padding: 10px;" name= "logoutAcc" >Log Out</button>
-            </form>
             <form class = "animalInfo" onsubmit = "validate()">
                 <fieldset class = "infoForm">
                     <label>Cat or dog?

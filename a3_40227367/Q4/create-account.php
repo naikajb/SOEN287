@@ -1,16 +1,16 @@
 <?php
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submitbtn'])) {
     $user = $_POST['username'];
-    $pass =  $_POST['password'];
+    $pass = $_POST['password'];
 
     $file = fopen('../files/accounts.txt', 'a+');
-    $text = $user.":".$pass."\n";
+    $text = $user . ":" . $pass . "\n";
 
-    if(strpos(file_get_contents("..files/accounts.txt"),$user)!== false && empty($user) !== true && empty($pass)!==true){
+    if (strpos(file_get_contents("..files/accounts.txt"), $user) !== false && empty($user) !== true && empty($pass) !== true) {
         echo "<script>alert(\"This username cannot be used\")</script>)";
         exit();
-    }else if (!strpos(file_get_contents("..files/accounts.txt"), $user) && empty($user) !== true && empty($pass)!==true){
+    } else if (!strpos(file_get_contents("..files/accounts.txt"), $user) && empty($user) !== true && empty($pass) !== true) {
         fwrite($file, $text);
         echo "<script>alert(\"Your account has been created! You are ready to login\")</script>";
     }
@@ -90,21 +90,21 @@ if(isset($_POST['submit'])){
                         <input type = "password" name = "password" placeholder="type in your password" required>
                     </div>
 
-                    <p class = requirements >
-                        <ul style = "opacity: 70%;font-size: 10px;">
-                            <li>At least 4 characters</li>
-                            <li>Must only contain digits and letters</li>
-                        </ul>
+                    <p class=requirements>
+                    <ul style="opacity: 70%;font-size: 10px;">
+                        <li>At least 4 characters</li>
+                        <li>Must only contain digits and letters</li>
+                    </ul>
                     </p>
 
-                    <div class = "submission">
-                        <input type="submit" id="submitbtn" class = "button"  value = "Sign Up!"></input>
-                        <a href = "login.php" style = "text-decoration: none;color: black;"> Login<!--</button>-->
+                    <div class="submission">
+                        <input type="submit" id="submitbtn" class="button" value="Sign Up!"></input>
+                        <a href="Desktop/SOEN287other/a3_40227367/Q4/php/login.phpOEN287other/a3_40227367/Q4/php/login.php"
+                           style="text-decoration: none;color: black;"> Login<!--</button>-->
                     </div>
                 </form>
             </div>
         </div>
-
 
 
         <footer>

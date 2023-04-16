@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
     <Title> A Cat and Dog for All</Title>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <Title> A Cat and Dog for All</Title>
-    <link rel = "stylesheet" href = "CSS/style.css">
-    <script type = "text/javascript" src="JS/adopt.js"></script>
+    <link rel="stylesheet" href="Desktop/SOEN287other/a3_40227367/Q4/CSS/style.css">
+    <script type="text/javascript" src="Desktop/SOEN287other/a3_40227367/Q4/JS/adopt.js"></script>
 </head>
 
 <body>
 <header>
-   <?php include 'header.php';?>
+    <?php include 'header.php';?>
 </header>
 
 <div class = "sidebar">
