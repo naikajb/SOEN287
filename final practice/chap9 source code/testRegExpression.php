@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<!-- array.php - A trivial example to illustrate a php document -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head> <title> regular expression.php </title>
+  </head>
+  <body>
+    <p>   
+      <?php
+        $str = "php is a programming language";
+       if (preg_match('/^php/', $str))
+            print "\$str begins with php";
+        else
+          print "\$str does not begin with php";
+
+
+
+      ?>
+
+    </p>
+  </body>
+</html>

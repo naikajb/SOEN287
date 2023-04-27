@@ -1,0 +1,33 @@
+<?xml version = "1.0"  encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- popcorn3.php - Processes the form described in
+     popcorn3.html
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Grocery </title>
+  </head>
+  <body>
+    Grocery Checklist
+   <form action = "grocery.php" method ="get"> <p>
+	  <label> <input type = "checkbox" name ="groceries[]"
+	      value = "milk"  checked = "checked" />
+	      Milk </label>
+	  <label> <input type = "checkbox" name ="groceries[]"
+		value = "bread" />
+	      Bread </label>
+	  <label> <input type = "checkbox" name ="groceries[]" 
+		value= "eggs" /> 
+	      Eggs </label>
+   
+        <input type = "submit"  value = "Submit" />
+
+        <input type = "reset"  value = "Reset" />
+  </p>
+</form>
+
+  </body>
+</html>
+

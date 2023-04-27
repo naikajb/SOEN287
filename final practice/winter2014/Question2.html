@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .parent{
+                border:dashed 1px;
+            }
+            .childa{
+                border:solid green 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent" >
+          I'm in the parent
+          <div class="childa" style = "border: blue 1px;">
+          </div>
+
+        </div>
+    </body>
+
+  <script>
+    const parentNode = document.getElementsByTagName("div")[0];
+    parentNode.removeChild(document.getElementsByTagName("div")[1]);
+    var newChild = document.createElement("div");
+    newChild.className = "childb";
+    newChild.innerHTML = "hello";
+    document.getElementsByTagName("div")[0].appendChild(newChild);
+  </script>
+</html>

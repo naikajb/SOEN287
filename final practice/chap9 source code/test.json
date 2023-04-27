@@ -1,0 +1,15 @@
+{
+    "John": {
+        "status":"Wait"
+    },
+    "Jennifer": {
+        "status":"Active"
+    },
+    "James": {
+        "status":"Active",
+        "age":23,
+        "name":"John Smith",
+        "address":"BD lasalle",
+        "telephone number":"514-12345"
+    }
+}

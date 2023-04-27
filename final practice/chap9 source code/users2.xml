@@ -1,0 +1,17 @@
+<?xml version='1.0'?>  
+<usersdb>  
+    <user id='1'>
+        <status>Active</status>
+        <name>Peppa Pig</name>  
+        <address>UK</address>
+        <age>5</age>
+        <telephone>514-12345</telephone>
+    </user>  
+   <user id='2'> 
+        <status>wait</status>
+        <name>John Smith</name>  
+        <address>8000 BD lasalle</address>
+        <age>23</age>
+        <telephone>438-12345</telephone>
+    </user>
+</usersdb>
